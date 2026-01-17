@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controllers.AyudaController"
+            prefWidth="900" prefHeight="600">
+
+    <top>
+        <Label text="Ayuda" 
+               style="-fx-font-size: 28px; -fx-font-weight: bold;"
+               BorderPane.alignment="CENTER"/>
+    </top>
+
+    <center>
+        <ScrollPane fitToWidth="true">
+            <VBox spacing="20" padding="20">
+
+                <Label text="¿Cómo usar el simulador?"
+                       style="-fx-font-size: 22px; -fx-font-weight: bold;" />
+
+                <Label wrapText="true"
+                       text="1. Selecciona un tipo de simulación.\n
+                             2. Ajusta los parámetros como velocidad, gravedad o ángulo.\n
+                             3. Presiona INICIAR para ver el movimiento.\n
+                             4. Revisa los gráficos y resultados generados automáticamente."
+                       style="-fx-font-size: 16px;" />
+
+                <Label text="Consejos:"
+                       style="-fx-font-size: 22px; -fx-font-weight: bold;" />
+
+                <Label wrapText="true"
+                       text="- Usa valores reales para obtener simulaciones más precisas.\n
+                             - Si un parámetro está vacío, la simulación no iniciará.\n
+                             - Puedes pausar o reiniciar la animación en cualquier momento."
+                       style="-fx-font-size: 16px;" />
+            </VBox>
+        </ScrollPane>
+    </center>
+</BorderPane>

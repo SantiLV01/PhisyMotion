@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="538.0" prefWidth="919.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.TeoriaAyudaController">
+
+    <ImageView fitHeight="604.0" fitWidth="919.0" layoutX="0" layoutY="0" mouseTransparent="true" preserveRatio="false">
+        <image><Image url="@../images/realidad.png" /></image>
+    </ImageView>
+
+    <ImageView fitHeight="375.0" fitWidth="769.0" layoutX="86.0" layoutY="115.0" mouseTransparent="true" preserveRatio="true">
+        <image><Image url="@../images/fondo10.png" /></image>
+    </ImageView>
+
+    <ScrollPane fx:id="scrollTeoria" fitToWidth="true" layoutX="97.0" layoutY="129.0" pannable="true" prefHeight="342.0" prefWidth="741.0" style="-fx-background-color: transparent; -fx-border-color: transparent;">
+        <VBox spacing="15" style="-fx-padding: 10;">
+            <Label style="-fx-font-size:25px; -fx-font-family: 'Alata'; -fx-text-fill:black;" text="1. ¿Cómo empezar una simulación?" />
+            <Label style="-fx-font-size:20px; -fx-font-family: 'Alata'; -fx-text-fill:black;" text="Selecciona Movimiento Rectilíneo, Vertical o Parabólico y presiona 'Iniciar Simulación'." wrapText="true" />
+
+            <Label style="-fx-font-size:25px; -fx-font-family: 'Alata'; -fx-text-fill:black;" text="2. ¿Cómo modificar las variables?" />
+            <Label style="-fx-font-size:20px; -fx-font-family: 'Alata'; -fx-text-fill:black;" text="En la simulación ve a 'Variables' y ajusta velocidad inicial, ángulo, aceleración o gravedad y presiona 'Aplicar'." wrapText="true" />
+
+            <Label style="-fx-font-size:25px; -fx-font-family: 'Alata'; -fx-text-fill:black;" text="3. ¿Cómo ver las gráficas?" />
+            <Label style="-fx-font-size:20px; -fx-font-family: 'Alata'; -fx-text-fill:black;" text="Haz clic en 'Gráficas' para ver posición/tiempo, velocidad/tiempo o trayectoria del proyectil." wrapText="true" />
+
+            <Label style="-fx-font-size:25px; -fx-font-family: 'Alata'; -fx-text-fill:black;" text="4. ¿Cómo ver los resultados?" />
+            <Label style="-fx-font-size:20px; -fx-font-family: 'Alata'; -fx-text-fill:black;" text="En 'Resultados' encontrarás distancia, tiempo, velocidad y tipo de movimiento detectado." wrapText="true" />
+
+            <Label style="-fx-font-size:25px; -fx-font-family: 'Alata'; -fx-text-fill:black;" text="5. Problemas comunes" />
+            <Label style="-fx-font-size:20px; -fx-font-family: 'Alata'; -fx-text-fill:black;" text="• La simulación no avanza → verifica velocidad inicial.\n• No muestra gráficas → inicia la simulación primero." wrapText="true" />
+        </VBox>
+    </ScrollPane>
+
+    <Button fx:id="btnConfiguracion" layoutX="53.0" layoutY="485.0" onAction="#onConfigClick" prefHeight="64.0" prefWidth="67.0" style="-fx-background-color: rgba(255,255,255,0.8); -fx-background-radius: 25;" text="⚙" />
+
+    <Button fx:id="btnSonido" layoutX="801.0" layoutY="41.0" onAction="#onSonidoClick" prefHeight="70" prefWidth="74" style="-fx-background-color: rgba(255,255,255,0.8); -fx-background-radius: 25;" text="🔊" />
+
+    <Button fx:id="btnVolver" layoutX="34.0" layoutY="48.0" onAction="#onVolverClick" prefHeight="64.0" prefWidth="67.0" style="-fx-background-color: rgba(255,255,255,0.9); -fx-background-radius: 20;" text="⟵" />
+
+    <ImageView fitHeight="64.0" fitWidth="68.0" layoutX="52.0" layoutY="485.0" mouseTransparent="true">
+        <image><Image url="@../images/config.png" /></image>
+    </ImageView>
+
+    <ImageView fitHeight="70.0" fitWidth="67" layoutX="35.0" layoutY="45.0" mouseTransparent="true">
+        <image><Image url="@../images/volver.png" /></image>
+    </ImageView>
+
+    <ImageView fitHeight="57" fitWidth="68" layoutX="804.0" layoutY="47.0" mouseTransparent="true">
+        <image><Image url="@../images/sonido.png" /></image>
+    </ImageView>
+   <ImageView fitHeight="70.0" fitWidth="399.0" layoutX="271.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../images/ayuda.png" />
+      </image>
+   </ImageView>
+
+</AnchorPane>

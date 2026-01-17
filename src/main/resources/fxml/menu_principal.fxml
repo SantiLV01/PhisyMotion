@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MenuPrincipalController">
+
+    <ImageView fitHeight="600.0" fitWidth="900.0" mouseTransparent="true" preserveRatio="false">
+        <image>
+            <Image url="@../images/realidad.png" />
+        </image>
+    </ImageView>
+
+    <Button fx:id="btnConfig" layoutX="58.0" layoutY="480.0" onAction="#abrirConfiguracion" prefHeight="54.0" prefWidth="60.0" text="Configuración" />
+    <Button fx:id="btnSonido" layoutX="786.0" layoutY="54.0" onAction="#abrirSonido" prefHeight="60.0" prefWidth="67.0" text="Sonido" />
+    <Button fx:id="btnVolver" layoutX="58.0" layoutY="61.0" onAction="#volverAlInicio" prefHeight="54.0" prefWidth="60.0" text="Volver" />
+
+    <Button fx:id="btnMRU" layoutX="171.0" layoutY="250.0" onAction="#abrirSimulacionMRU" prefHeight="60.0" prefWidth="244.0" text="Simulación MRU" />
+    <Button fx:id="btnMRUV" layoutX="508.0" layoutY="250.0" onAction="#abrirSimulacionMRUV" prefHeight="60.0" prefWidth="244.0" text="Simulación MRUV" />
+    <Button fx:id="btnProyectiles" layoutX="172.0" layoutY="385.0" onAction="#abrirSimulacionProyectiles" prefHeight="60.0" prefWidth="244.0" text="Simulación de Proyectiles" />
+    <Button fx:id="btnAyuda" layoutX="513.0" layoutY="385.0" onAction="#abrirAyuda" prefHeight="60.0" prefWidth="244.0" text="Ayuda/Teoría" />
+
+    <ImageView fitHeight="87.0" fitWidth="273.0" layoutX="494.0" layoutY="249.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../images/btn3.png" />
+        </image>
+    </ImageView>
+    <ImageView fitHeight="87.0" fitWidth="273.0" layoutX="157.0" layoutY="248.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../images/btn1.png" />
+        </image>
+    </ImageView>
+    <ImageView fitHeight="87.0" fitWidth="273.0" layoutX="157.0" layoutY="384.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../images/btn2.png" />
+        </image>
+    </ImageView>
+    <ImageView fitHeight="87.0" fitWidth="273.0" layoutX="494.0" layoutY="382.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../images/btn4.png" />
+        </image>
+    </ImageView>
+    <ImageView fitHeight="83.0" fitWidth="70.0" layoutX="53.0" layoutY="475.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../images/config.png" />
+        </image>
+    </ImageView>
+    <ImageView fitHeight="71.0" fitWidth="70.0" layoutX="48.0" layoutY="49.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../images/volver.png" />
+        </image>
+    </ImageView>
+    <ImageView fitHeight="60.0" fitWidth="70.0" layoutX="786.0" layoutY="54.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../images/sonido.png" />
+        </image>
+    </ImageView>
+
+    <Label layoutX="172.0" layoutY="133.0" text="Elige un modo de juego:" textFill="#006cab">
+        <font>
+            <Font name="Arial Rounded MT Bold" size="40.0" />
+        </font>
+    </Label>
+
+</AnchorPane>

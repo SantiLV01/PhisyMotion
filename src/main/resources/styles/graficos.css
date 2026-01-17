@@ -1,0 +1,61 @@
+
+.titulo-principal {
+    -fx-font-size: 40px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0077ff;   
+}
+
+.contenedor-grafico {
+    -fx-background-color: transparent;
+    -fx-border-color: rgba(255,255,255,0.25);
+    -fx-border-radius: 10;
+    -fx-border-width: 1;
+}
+
+.tabla-box {
+    -fx-background-color: rgba(204,230,255,0.8); 
+    -fx-background-radius: 16;
+    -fx-border-radius: 16;
+    -fx-border-color: #0077ff;
+    -fx-border-width: 2;
+}
+
+.tabla-titulo {
+    -fx-font-size: 22px;
+    -fx-text-fill: #0059c9; 
+    -fx-font-weight: bold;
+}
+
+.btn-posicion {
+    -fx-background-color: #009dff;
+    -fx-text-fill: white;
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 14;
+}
+.btn-posicion:hover { -fx-background-color: #00c8ff; }
+
+.btn-velocidad {
+    -fx-background-color: #00b86a;
+    -fx-text-fill: white;
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 14;
+}
+.btn-velocidad:hover { -fx-background-color: #00e69b; }
+
+.btn-aceleracion {
+    -fx-background-color: #ff8c00;
+    -fx-text-fill: white;
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 14;
+}
+.btn-aceleracion:hover { -fx-background-color: #ffa733; }
+.chart-plot-background {
+    -fx-background-color: transparent;
+}
+
+.chart {
+    -fx-background-color: transparent;
+}

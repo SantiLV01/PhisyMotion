@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600" prefWidth="900" stylesheets="@../styles/resultados.css" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ResultadosController">
+
+    <ImageView fitHeight="619.0" fitWidth="936.0" layoutX="-12.0">
+        <image><Image url="@../images/realidad.png" /></image>
+    </ImageView>
+
+    <AnchorPane layoutX="40.0" layoutY="40.0" prefHeight="520" prefWidth="820" styleClass="panel-principal">
+        <ImageView fitHeight="70.0" fitWidth="68.0" layoutX="-20.0" layoutY="12.0" mouseTransparent="true">
+            <image><Image url="@../images/volver.png" /></image>
+        </ImageView>
+        <ImageView fitHeight="64.0" fitWidth="68.0" layoutX="-12.0" layoutY="461.0" mouseTransparent="true">
+            <image><Image url="@../images/config.png" /></image>
+        </ImageView>
+
+        <Button fx:id="btnSound" layoutX="772.0" layoutY="10.0" onAction="#toggleSonido" prefHeight="70.0" prefWidth="68.0" styleClass="btn-sound" />
+        <ImageView fitHeight="64.0" fitWidth="68.0" layoutX="772.0" layoutY="14.0" mouseTransparent="true">
+            <image><Image url="@../images/sonido.png" /></image>
+        </ImageView>
+
+       <Label layoutX="70.0" layoutY="82.0" prefWidth="700" styleClass="texto" text="En esta pantalla el usuario puede ver un resumen final de la simulación. Aquí aparecen valores calculados, tabla de datos y conclusiones." wrapText="true" />
+
+        <AnchorPane layoutX="37.0" layoutY="155.0" prefHeight="300" prefWidth="430" styleClass="tabla-box">
+            <Label layoutX="20" layoutY="10" styleClass="tabla-titulo" text="[Tabla de datos - recuadro grande]" />
+            <TableView fx:id="tablaDatos" layoutX="24.0" layoutY="45.0" prefHeight="230" prefWidth="390" styleClass="tabla-transparente">
+                <columns>
+    <TableColumn fx:id="colTiempo" prefWidth="100" text="Tiempo (s)" />
+    <TableColumn fx:id="colPosicion" prefWidth="100" text="Posición (m)" />
+    <TableColumn fx:id="colVelocidad" prefWidth="100" text="Velocidad (m/s)" />
+    <TableColumn fx:id="colAceleracion" prefWidth="100" text="Aceleración (m/s²)" />
+</columns>
+
+            </TableView>
+        </AnchorPane>
+
+        <AnchorPane layoutX="490.0" layoutY="158.0" prefHeight="300" prefWidth="250" styleClass="resumen-box">
+            <Label layoutX="80" layoutY="10" styleClass="resumen-titulo" text="RESUMEN" />
+            <Label fx:id="distanciaLbl" layoutX="25" layoutY="80" styleClass="resumen-item" text="- Distancia:" />
+            <Label fx:id="tiempoLbl" layoutX="25" layoutY="115" styleClass="resumen-item" text="- Tiempo:" />
+            <Label fx:id="velocidadLbl" layoutX="25" layoutY="150" styleClass="resumen-item" text="- Velocidad:" />
+            <Label fx:id="movimientoLbl" layoutX="25" layoutY="185" styleClass="resumen-item" text="- Movimiento:" />
+        </AnchorPane>
+
+        <Button layoutX="498.0" layoutY="467.0" onAction="#abrirSimulacion" prefHeight="50.0" prefWidth="161.0" styleClass="btn-sim" text="SIMULACIÓN" />
+        <Button layoutX="193.0" layoutY="467.0" mouseTransparent="true" prefHeight="50" prefWidth="161.0" styleClass="btn-res" text="RESULTADOS" />
+
+        <Button fx:id="btnConfig" layoutX="-6.0" layoutY="465.0" onAction="#abrirConfiguracion" prefHeight="55" prefWidth="55" styleClass="btn-config" />
+ 
+        <Button fx:id="btnBack" layoutX="-13.0" layoutY="26.0" onAction="#volverMenu" prefHeight="55" prefWidth="55" styleClass="btn-back" />
+      <ImageView fitHeight="60.0" fitWidth="181.0" layoutX="190.0" layoutY="464.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/btnRES.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="55.0" fitWidth="224.0" layoutX="489.0" layoutY="466.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/btnSim.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="81.0" fitWidth="426.0" layoutX="226.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/aaa.png" />
+         </image>
+      </ImageView>
+    </AnchorPane>
+</AnchorPane>
